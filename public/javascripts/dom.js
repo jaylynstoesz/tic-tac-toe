@@ -4,11 +4,15 @@ window.onload = function() {
   for(var i = 0; i < div.length; i++){
     div[i].addEventListener('click', function(e){
       if (player.innerHTML === "player 1") {
-        e.currentTarget.innerHTML = "X";
-        player.innerHTML = "player 2";
+        if (e.currentTarget.innerHTML === "") {
+          e.currentTarget.innerHTML = " X";
+          player.innerHTML = "player 2";
+        }
       } else {
-        e.currentTarget.innerHTML = "O";
-        player.innerHTML = "player 1";
+        if (e.currentTarget.innerHTML === "") {
+          e.currentTarget.innerHTML = " O";
+          player.innerHTML = "player 1";
+        }
       }
     });
   }
