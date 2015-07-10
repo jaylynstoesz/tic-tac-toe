@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.game {
+  height: 500px;
+  width: 500px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.cell {
+  height: 33.33%;
+  width: 33.33%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#five {
+  border: 2px solid black;
+}
+
+#two, #eight {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#four, #six {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
