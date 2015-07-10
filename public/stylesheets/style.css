@@ -8,18 +8,30 @@ a {
 }
 
 .game {
+  /*background-color: red;*/
   height: 500px;
   width: 500px;
   box-sizing: border-box;
   margin: 0;
+  position: relative;
 }
 
 .cell {
-  height: 33.33%;
-  width: 33.33%;
+  /*background-color: green;*/
+  height: 33%;
+  width: 33%;
   display: inline-block;
   box-sizing: border-box;
   margin: 0;
+  vertical-align: bottom;
+  font-size: 1000%;
+  text-align: center;
+}
+
+.icon {
+  background-color: blue;
+  display: block;
+  width: auto;
 }
 
 #five {
@@ -34,4 +46,12 @@ a {
 #four, #six {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+#player {
+  display: inline-block;
+}
+
+#foo {
+  display: inline-block;
 }
